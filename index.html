@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Spartan"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Room homepage</title>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <nav class="mobile-version">
+          <ul>
+            <li id="hamburger">
+              <svg width="20" height="14" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20 12v2H0v-2h20zm0-6v2H0V6h20zm0-6v2H0V0h20z"
+                  fill="#FFF"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </li>
+          </ul>
+
+          <ul class="room">
+            <li>room</li>
+          </ul>
+        </nav>
+
+        <nav class="on-click-hamburger">
+          <ul id = "on-click-hamburger-ul">
+            <li id = "close-cross">
+              <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M14.364.222l1.414 1.414L9.414 8l6.364 6.364-1.414 1.414L8 9.414l-6.364 6.364-1.414-1.414L6.586 8 .222 1.636 1.636.222 8 6.586 14.364.222z"
+                  fill="#000"
+                  fill-rule="evenodd"
+                  opacity=".201"
+                />
+              </svg>
+            </li>
+            <li>home</li>
+            <li>shop</li>
+            <li>about</li>
+            <li>contact</li>
+          </ul>
+        </nav>
+
+        <nav class="desktop-version">
+          <ul>
+            <li id="li-room">room</li>
+            <li class = "li-hover">home<br><span></span></li>
+            <li class = "li-hover">shop<br><span></span></li>
+            <li class = "li-hover">about<br><span></span></li>
+            <li class = "li-hover">contact<br><span></span></li>
+          </ul>
+        </nav>
+
+        <div class="slide-arrows">
+          <img src="images/icon-angle-left.svg" alt="angle-left" class = "arrow-left" id = "arrow-left-mobile" />
+          <img src="images/icon-angle-right.svg" alt="angle-left" class = "arrow-right" id = "arrow-right-mobile" />
+        </div>
+      </section>
+      <section class="first-part">
+        <div class="first-part-desktop">
+          <h1>Discover innovative ways to decorate</h1>
+          <p>
+            We provide unmatched quality, comfort, and style for property owners
+            across the country. Our experts combine form and function in
+            bringing your vision to life. Create a room in your own style with
+            our collection and make your property a reflection of you and what
+            you love.
+          </p>
+
+          <p class="shop">
+            S H O P&ensp; N O W<span class="arrow"
+              ><svg width="40" height="12" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M34.05 0l5.481 5.527h.008v.008L40 6l-.461.465v.063l-.062-.001L34.049 12l-.662-.668 4.765-4.805H0v-1h38.206l-4.82-4.86L34.05 0z"
+                  fill="#000"
+                  fill-rule="nonzero"
+                />
+              </svg>
+            </span>
+          </p>
+        </div>
+        <div class="slide-arrows-for-desktop">
+          <div class="slide-arrows-desktop">
+            <img src="images/icon-angle-left.svg" alt="angle-left" class = "arrow-left" id = "arrow-left-desktop" />
+            <img src="images/icon-angle-right.svg" alt="angle-left" class = "arrow-right"id = "arrow-right-desktop" />
+          </div>
+        </div>
+      </section>
+
+      <div class="image-about-dark">
+        <img
+          src="images\image-about-dark.jpg"
+          alt="a sweet living room in the dark"
+        />
+      </div>
+
+      <section class="second-part">
+        <h2>A B O U T&ensp; O U R&ensp; F U R N I T U R E</h2>
+        <p>
+          Our multifunctional collection blends design and function to suit your
+          individual taste. Make each room unique, or pick a cohesive theme that
+          best express your interests and what inspires you. Find the furniture
+          pieces you need, from traditional to contemporary styles or anything
+          in between. Product specialists are available to help you create your
+          dream space.
+        </p>
+      </section>
+      <div class="img-about-light">
+        <img src="images/image-about-light.jpg" alt="a chair under light" />
+      </div>
+    </main>
+
+    <!--
+  Home
+  Shop
+  About
+  Contact
+
+  We are available all across the globe
+
+  With stores all over the world, it's easy for you to find furniture for your home or place of business. 
+  Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
+  store locator. Any questions? Don't hesitate to contact us today.
+
+  Shop now
+
+  Manufactured with the best materials
+
+  Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
+  to ensure that every product is made as perfect and as consistent as possible. With three decades of 
+  experience in this industry, we understand what customers want for their home and office.
+
+  Shop now
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  -->
+    <script src="main.js"></script>
+  </body>
+</html>

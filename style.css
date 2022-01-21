@@ -1,0 +1,331 @@
+/*- Dark Gray: hsl(0, 0%, 63%)
+- Black: hsl(0, 0%, 0%)
+- White: hsl(0, 0%, 100%)
+- Very Dark Gray: hsl(0, 0%, 27%)
+*/
+
+:root {
+  --dark-grey: hsl(0, 0%, 63%);
+}
+
+/*--------------------------VERSION MOBILE-------------------*/
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/*------------------------Hero------------------------------*/
+
+.hero {
+  width: 101%;
+  height: 56vh;
+  transition: all 2s ease;
+  /*background-image: url("images/mobile-image-hero-1.jpg");*/
+  background-size: cover;
+  position: relative;
+}
+
+.hero .mobile-version {
+  display: flex;
+  height: 20%;
+  padding-top: 20px;
+  justify-content: space-around;
+  align-items: baseline;
+  list-style-type: none;
+  color: white;
+}
+
+.hero .desktop-version {
+  display: none;
+}
+
+.mobile-version ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.hero .on-click-hamburger ul {
+  display: none;
+  height: 20%;
+  padding-top: 30px;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  color: white;
+  margin: 0;
+  margin-right: 30px;
+}
+
+#close-cross {
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+.room {
+  width: 50%;
+}
+
+.room li {
+  margin-left: 1rem;
+  font-size: 1.8rem;
+}
+
+.slide-arrows {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 14%;
+  width: 30%;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.slide-arrows img {
+  width: 12.5px;
+}
+
+/*-------------------first part--------------------------*/
+
+.first-part {
+  margin-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.first-part h1 {
+  color: hsl(0, 0%, 0%);
+  text-align: left;
+  font-size: 2rem;
+}
+
+.first-part p {
+  color: var(--dark-grey);
+  text-align: left;
+}
+
+.first-part .shop {
+  color: hsl(0, 0%, 0%);
+  font-family: "Spartan", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-top: 3rem;
+  font-size: 0.8rem;
+}
+
+.arrow {
+  margin-left: 60px;
+}
+
+.image-about-dark {
+  margin-top: 50px;
+}
+
+.image-about-dark img {
+  width: 101%;
+}
+
+/*------------second part--------------*/
+
+.second-part {
+  margin-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.second-part h2 {
+  font-size: 0.9rem;
+  font-family: "Spartan", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.second-part p {
+  color: var(--dark-grey);
+}
+
+.img-about-light {
+  margin-top: 50px;
+}
+
+.img-about-light img {
+  width: 101%;
+}
+
+/*-----------------------Version desktop------------------------*/
+
+@media screen and (min-width: 800px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr 0.4fr 1.2fr;
+  }
+
+  .hero {
+    width: 100%;
+    height: 600px;
+    /*background-image: url("images/desktop-image-hero-1.jpg");*/
+    background-size: cover;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .hero .mobile-version {
+    display: none;
+  }
+
+  .hero .desktop-version {
+    display: block;
+  }
+
+  .hero .desktop-version ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    list-style: none;
+    color: white;
+    margin-top: 40px;
+    width: 60%;
+  }
+
+  .hero .desktop-version ul li {
+    cursor: pointer;
+  }
+
+  .hero .desktop-version ul li span {
+    display: none;
+    width: 15px;
+    margin-left: 10px;
+    height: 10px;
+    border-top: 2px solid white;
+  }
+
+  #li-room {
+    font-size: 1.8rem;
+    transition: all 0.7s ease;
+  }
+
+  #li-room:hover {
+    transform: translate(-15px);
+  }
+
+  .hero .on-click-hamburger {
+    display: none;
+  }
+
+  .image-about-dark {
+    margin: 0;
+  }
+
+  .image-about-dark img {
+    height: 40vh;
+  }
+
+  .img-about-light {
+    padding: 0;
+    margin: 0;
+  }
+
+  .img-about-light img {
+    width: 100%;
+    height: 40vh;
+  }
+
+  .first-part {
+    margin: 0;
+    padding: 0;
+    grid-column-start: 3;
+    grid-column-end: 5;
+
+    position: relative;
+  }
+
+  .first-part-desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80%;
+  }
+
+  .first-part h1 {
+    padding-left: 120px;
+    padding-right: 120px;
+    font-size: 2.4rem;
+    margin: 0;
+  }
+
+  .first-part p {
+    padding-left: 120px;
+    padding-right: 120px;
+    margin: 0;
+    max-height: 180px;
+    overflow: auto;
+  }
+
+  .first-part .shop {
+    margin: 0;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  .second-part {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    padding-left: 4rem;
+    padding-right: 4.5rem;
+  }
+
+  .second-part h2 {
+    font-weight: bolder;
+  }
+
+  .slide-arrows {
+    display: none;
+  }
+
+  .slide-arrows-desktop {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 25%;
+    height: 50%;
+    background-color: black;
+  }
+
+  .slide-arrows-for-desktop {
+    height: 20%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+
+  #arrow-left-desktop {
+
+    transition: all 0.7s ease;
+  }
+
+  #arrow-right-desktop {
+
+    transition:all 0.7s ease;
+  }
+
+  #arrow-left-desktop:hover {
+    cursor: pointer;
+    transform: translate(-10px);
+  }
+
+  #arrow-right-desktop:hover {
+    cursor: pointer;
+    transform: translate(10px);
+  }
+}
